@@ -74,24 +74,24 @@ export default function App() {
 
           {/* Tabs Navigation */}
           <div className="flex bg-muted p-1.5 rounded-full overflow-x-auto no-scrollbar gap-1 fade-in" style={{ animationDelay: "0.1s" }}>
-            <TabButton 
+            <Tab 
               active={activeTab === "before"} 
               onClick={() => setActiveTab("before")}
             >
               {isTh ? "🌱 สิ่งที่ควรรู้" : "🌱 Before You Start"}
-            </TabButton>
-            <TabButton 
+            </Tab>
+            <Tab 
               active={activeTab === "how"} 
               onClick={() => setActiveTab("how")}
             >
               {isTh ? "📊 วิธีนับลูกดิ้น" : "📊 How to Count"}
-            </TabButton>
-            <TabButton 
+            </Tab>
+            <Tab 
               active={activeTab === "warning"} 
               onClick={() => setActiveTab("warning")}
             >
               {isTh ? "🚨 สัญญาณเตือน" : "🚨 Warning Signs"}
-            </TabButton>
+            </Tab>
           </div>
 
           {/* Tab Content */}
@@ -329,26 +329,13 @@ export default function App() {
 
         </div>
 
-{/* CTA Button Sticky Bottom */}
-<div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background to-transparent z-40 flex justify-center pointer-events-none">
-  <div className="w-full max-w-[430px] pointer-events-auto">
-    <a
-      href="https://toobtubb.vercel.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2"
-    >
-      {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">→</span>
-    </a>
-  </div>
-</div>
   </div>
 </div>
 
   );
 }
 
-function TabButton({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+function Tab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button
       onClick={onClick}
