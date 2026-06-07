@@ -61,7 +61,7 @@ export default function App() {
             
             <div className="bg-card p-6 rounded-[2rem] shadow-soft border border-border/50 w-full relative z-10">
               <h1 className="text-2xl font-bold text-primary mb-2">
-                {isTh ? "คู่มือตุ้บตั้บ 👶🏻💌" : "Toobtubb Guide 👶🏻💌"}
+                {isTh ? "คู่มือตุ้บตั้บ" : "Toobtubb Guide"}
               </h1>
               <h2 className="text-lg font-medium text-foreground mb-1">
                 {isTh ? "แนะนำการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
@@ -216,14 +216,14 @@ export default function App() {
                         {isTh ? (
                           <>
                             <li>เลือกช่วงเวลาที่ลูกมักดิ้นเก่งที่สุด หรือเวลาที่คุณแม่สะดวก (แนะนำเวลาเดิมทุกวัน เช่น ช่วงเย็น)</li>
-                            <li> 1 และบันทึกเวลาไว้</li>
+                            <li>เมื่อลูกดิ้นครั้งแรกให้เริ่มนับครั้งที่ 1 และบันทึกเวลาไว้</li>
                             <li>นับต่อเนื่องจนกว่าจะครบ 10 ครั้ง แล้วจดเวลาที่นับจบ</li>
                             <li>ลูกควรดิ้นครบ 10 ครั้ง <strong className="text-primary">ภายในเวลา 2 ชั่วโมง</strong></li>
                           </>
                         ) : (
                           <>
                             <li>Choose the time when your baby is most active, or a convenient time (recommend same time daily, e.g. evenings)</li>
-                            <li>Start counting at 1, note the start time</li>
+                            <li>Start counting from the first kick, note the start time</li>
                             <li>Count continuously until you reach 10 movements, note the end time</li>
                             <li>Baby should reach 10 movements <strong className="text-primary">within 2 hours</strong></li>
                           </>
@@ -245,7 +245,7 @@ export default function App() {
                 >
                   <div className="bg-[var(--color-accent-red)] border border-red-200/50 p-6 rounded-[2rem] shadow-soft">
                     <h3 className="text-lg font-display font-semibold text-red-800 mb-4">
-                      {isTh ? "🚨 ควรรีบพบแพทย์ทันที ไม่ต้องรอให้ถึงวันนัด หากพบว่า:" : "🚨 See a Doctor Immediately — Don't Wait for Your Scheduled Appointment — if:"}
+                      {isTh ? "🚨 ควรรีบพบแพทย์ทันที หากพบว่า:" : "🚨 See a Doctor Immediately — if:"}
                     </h3>
                     
                     <ul className="space-y-3 mb-6">
@@ -260,11 +260,11 @@ export default function App() {
                             <span className="text-sm"><strong>วิธีนับ 10 ครั้ง:</strong> ใช้เวลาเกิน 2 ชั่วโมงแล้ว แต่ลูกดิ้นไม่ครบ 10 ครั้ง</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">📉</span>
+                            <span className="shrink-0 mt-0.5">⚠️</span>
                             <span className="text-sm">ลูกดิ้นน้อยลงจากวันก่อนๆ อย่างชัดเจน (เช่น ลดลงมากกว่าครึ่งหนึ่ง)</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">🛑</span>
+                            <span className="shrink-0 mt-0.5">⚠️</span>
                             <span className="text-sm">ไม่รู้สึกว่าลูกดิ้นเลย แม้จะเปลี่ยนท่านอนตะแคงซ้าย ดื่มน้ำเย็น หรือลูบท้องกระตุ้นแล้วก็ตาม</span>
                           </li>
                         </>
@@ -279,11 +279,11 @@ export default function App() {
                             <span className="text-sm"><strong>Method 2 (count to 10):</strong> Baby hasn't reached 10 movements after 2 hours</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">📉</span>
+                            <span className="shrink-0 mt-0.5">⚠️</span>
                             <span className="text-sm">Baby is moving noticeably less than usual (e.g. more than half as much)</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">🛑</span>
+                            <span className="shrink-0 mt-0.5">⚠️</span>
                             <span className="text-sm">You feel no movement at all, even after lying on your left side, drinking cold water, or rubbing your belly</span>
                           </li>
                         </>
@@ -299,7 +299,7 @@ export default function App() {
                       </div>
                       <div className="bg-white/90 px-4 py-4 flex flex-col gap-3">
                         <div className="flex gap-2 items-start">
-                          <span className="text-base shrink-0">🌿</span>
+                          <span className="text-base shrink-0">👶🏻</span>
                           <p className="text-sm text-[#4A3728] leading-relaxed">
                             {isTh
                               ? "ลูกแต่ละคนมีจังหวะการดิ้นไม่เหมือนกัน"
