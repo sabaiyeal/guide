@@ -61,10 +61,10 @@ export default function App() {
             
             <div className="bg-card p-6 rounded-[2rem] shadow-soft border border-border/50 w-full relative z-10">
               <h1 className="text-2xl font-bold text-primary mb-2">
-                {isTh ? "คู่มือตุ้บตั้บ" : "Toobtubb Guide"}
+                {isTh ? "คู่มือตุ้บตั้บ💌" : "Toobtubb Guide💌"}
               </h1>
               <h2 className="text-lg font-medium text-foreground mb-1">
-                {isTh ? "แนะนำการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
+                {isTh ? "คู่มือการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
               </h2>
               <p className="text-muted-foreground text-sm">
                 {isTh ? "เพราะทุกการดิ้นมีความหมาย" : "Every kick is another message from your little one"}
@@ -131,7 +131,7 @@ export default function App() {
 
                     <AccordionItem value="q3" className="bg-card px-4 rounded-2xl border-none shadow-soft">
                       <AccordionTrigger className="hover:no-underline font-display text-base text-left">
-                        {isTh ? "แบบไหนที่ไม่นับ?" : "What does NOT count?"}
+                        {isTh ? "ลูกดิ้นแบบไหนที่ไม่นับ?" : "What does NOT count?"}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground leading-relaxed">
                         {isTh 
@@ -142,7 +142,7 @@ export default function App() {
 
                     <AccordionItem value="q4" className="bg-card px-4 rounded-2xl border-none shadow-soft">
                       <AccordionTrigger className="hover:no-underline font-display text-base text-left">
-                        {isTh ? "ควรนับในท่าไหน?" : "What position should I be in?"}
+                        {isTh ? "ควรนับลูกดิ้นในท่าไหน?" : "What position should I be in?"}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground leading-relaxed whitespace-pre-line">
                         {isTh 
@@ -217,7 +217,7 @@ export default function App() {
                           <>
                             <li>เลือกช่วงเวลาที่ลูกมักดิ้นเก่งที่สุด หรือเวลาที่คุณแม่สะดวก (แนะนำเวลาเดิมทุกวัน เช่น ช่วงเย็น)</li>
                             <li>เมื่อลูกดิ้นครั้งแรกให้เริ่มนับครั้งที่ 1 และบันทึกเวลาไว้</li>
-                            <li>นับต่อเนื่องจนกว่าจะครบ 10 ครั้ง แล้วจดเวลาที่นับจบ</li>
+                            <li>นับต่อเนื่องจนครบ 10 ครั้ง แล้วจดเวลาที่นับจบ</li>
                             <li>ลูกควรดิ้นครบ 10 ครั้ง <strong className="text-primary">ภายในเวลา 2 ชั่วโมง</strong></li>
                           </>
                         ) : (
@@ -252,38 +252,38 @@ export default function App() {
                       {isTh ? (
                         <>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm"><strong>วิธีนับหลัง 3 มื้อ:</strong> ดิ้นรวมกันทั้งวันน้อยกว่า 10 ครั้ง หรือหลังอาหารมื้อใดมื้อหนึ่งดิ้นไม่ถึง 3 ครั้งใน 2 ชั่วโมง</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm"><strong>วิธีนับ 10 ครั้ง:</strong> ใช้เวลาเกิน 2 ชั่วโมงแล้ว แต่ลูกดิ้นไม่ครบ 10 ครั้ง</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm">ลูกดิ้นน้อยลงจากวันก่อนๆ อย่างชัดเจน (เช่น ลดลงมากกว่าครึ่งหนึ่ง)</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm">ไม่รู้สึกว่าลูกดิ้นเลย แม้จะเปลี่ยนท่านอนตะแคงซ้าย ดื่มน้ำเย็น หรือลูบท้องกระตุ้นแล้วก็ตาม</span>
                           </li>
                         </>
                       ) : (
                         <>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm"><strong>Method 1 (3 meals):</strong> Total daily movements fewer than 10, or fewer than 3 movements within 2 hours after any single meal</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm"><strong>Method 2 (count to 10):</strong> Baby hasn't reached 10 movements after 2 hours</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm">Baby is moving noticeably less than usual (e.g. more than half as much)</span>
                           </li>
                           <li className="flex gap-3 bg-white/60 p-3 rounded-xl">
-                            <span className="shrink-0 mt-0.5">⚠️</span>
+                            <span className="shrink-0 mt-0.5">•</span>
                             <span className="text-sm">You feel no movement at all, even after lying on your left side, drinking cold water, or rubbing your belly</span>
                           </li>
                         </>
