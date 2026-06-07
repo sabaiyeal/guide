@@ -331,16 +331,16 @@ export default function App() {
 
         {/* CTA Button Sticky Bottom */}
 <div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background to-transparent z-40 flex justify-center pointer-events-none">
-  <div className="w-full max-w-[430px] pointer-events-auto">
-    
-      href="https://toobtubb.vercel.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2"
-    >
-      {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">&rrar;</span>
-    </a>
-  </div>
+<div className="w-full max-w-[430px] pointer-events-auto">
+  
+    href="https://toobtubb.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2"
+  >
+    {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">→</span>
+  </a>
+</div>
 </div>
 
       </div>
