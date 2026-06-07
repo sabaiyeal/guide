@@ -61,13 +61,13 @@ export default function App() {
             
             <div className="bg-card p-6 rounded-[2rem] shadow-soft border border-border/50 w-full relative z-10">
               <h1 className="text-2xl font-bold text-primary mb-2">
-                {isTh ? "ตุ้บตั้บ Guide 👶🏻💌" : "Toobtubb Guide 👶🏻💌"}
+                {isTh ? "คู่มือตุ้บตั้บ 👶🏻💌" : "Toobtubb Guide 👶🏻💌"}
               </h1>
               <h2 className="text-lg font-medium text-foreground mb-1">
-                {isTh ? "คู่มือการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
+                {isTh ? "แนะนำการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                {isTh ? "ทุกการดิ้น คืออีกหนึ่งการสื่อสารจากลูกน้อย" : "Every kick is another message from your little one"}
+                {isTh ? "เพราะทุกการดิ้นมีความหมาย" : "Every kick is another message from your little one"}
               </p>
             </div>
           </section>
@@ -78,7 +78,7 @@ export default function App() {
               active={activeTab === "before"} 
               onClick={() => setActiveTab("before")}
             >
-              {isTh ? "🌱 สิ่งที่ควรรู้ก่อนเริ่มนับ" : "🌱 Before You Start"}
+              {isTh ? "🌱 สิ่งที่ควรรู้" : "🌱 Before You Start"}
             </TabButton>
             <TabButton 
               active={activeTab === "how"} 
