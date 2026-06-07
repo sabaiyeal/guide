@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&family=Sarabun:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-accent-pink: #F3A3B4;
+  --color-accent-yellow: #F9E79F;
+  --color-accent-mint: #E8F8F5;
+  --color-accent-red: #FDE8E8;
+
+  --font-sans: 'Sarabun', sans-serif;
+  --font-display: 'Mitr', sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #FAF7F0;
+  --foreground: #4A3728;
+  --border: rgba(74, 55, 40, 0.1);
+  --input: rgba(74, 55, 40, 0.1);
+  --ring: rgba(65, 117, 85, 0.5);
+
+  --card: #FFFFFF;
+  --card-foreground: #4A3728;
+
+  --primary: #417555;
+  --primary-foreground: #FFFFFF;
+
+  --muted: rgba(74, 55, 40, 0.05);
+  --muted-foreground: rgba(74, 55, 40, 0.6);
+
+  --accent: rgba(74, 55, 40, 0.05);
+  --accent-foreground: #4A3728;
+
+  --radius: 1.5rem;
+
+  --shadow-soft: 0 4px 20px -2px rgba(74, 55, 40, 0.05);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.floating-anim {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
