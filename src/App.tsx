@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import babyIllustration from "@assets/baby_reading2_nobg.png";
+const babyIllustration = "/babyread.png";
 
 type Language = "th" | "en";
 
