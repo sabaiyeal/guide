@@ -64,10 +64,10 @@ export default function App() {
                 {isTh ? "คู่มือตุ้บตั้บ💌" : "Toobtubb Guide💌"}
               </h1>
               <h2 className="text-lg font-medium text-foreground mb-1">
-                {isTh ? "คู่มือการนับลูกดิ้นสำหรับคุณแม่" : "Fetal Movement Counting Guide for Moms"}
+                {isTh ? "คู่มือการนับลูกดิ้นสำหรับคุณแม่" : "Kick Counting Guide for Moms"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                {isTh ? "เพราะทุกการดิ้นมีความหมาย" : "Every kick is another message from your little one"}
+                {isTh ? "เพราะทุกการดิ้นมีความหมาย" : "Every kick is a hello from your little one"}
               </p>
             </div>
           </section>
