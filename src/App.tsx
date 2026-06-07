@@ -338,7 +338,7 @@ export default function App() {
       rel="noopener noreferrer"
       className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2"
     >
-      {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">→</span>
+      {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">&rrar;</span>
     </a>
   </div>
 </div>
