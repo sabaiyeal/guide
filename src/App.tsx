@@ -146,7 +146,7 @@ export default function App() {
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground leading-relaxed whitespace-pre-line">
                         {isTh 
-                          ? "• นั่งพักสบาย ๆ หรือ นอนตะแคงซ้าย (ช่วยให้เลือดไปเลี้ยงทารกได้ดีขึ้น)\n• อยู่ในที่เงียบและผ่อนคลาย มือสัมผัสหน้าท้อง\n• อาจดื่มน้ำเย็น น้ำผลไม้ หรือรับประทานของว่างก่อนเริ่มนับเพื่อช่วยกระตุ้นได้" 
+                          ? "• นั่งพักสบาย ๆ หรือ นอนตะแคงซ้าย (ช่วยให้เลือดไปเลี้ยงทารกได้ดีขึ้น)\n• อยู่ในที่เงียบและผ่อนคลาย มือสัมผัสหน้าท้อง\n• อาจดื่มน้ำเย็น น้ำผลไม้ หรือรับประทานของว่างก่อนเพื่อช่วยกระตุ้นได้" 
                           : "• Sit comfortably or lie on your left side (improves blood flow to baby)\n• Find a quiet, relaxed place with your hands on your belly\n• Try drinking cold water, juice, or having a snack first to stimulate movement"}
                       </AccordionContent>
                     </AccordionItem>
@@ -216,7 +216,7 @@ export default function App() {
                         {isTh ? (
                           <>
                             <li>เลือกช่วงเวลาที่ลูกมักดิ้นเก่งที่สุด หรือเวลาที่คุณแม่สะดวก (แนะนำเวลาเดิมทุกวัน เช่น ช่วงเย็น)</li>
-                            <li>เริ่มนับ 1 และบันทึกเวลาไว้</li>
+                            <li> 1 และบันทึกเวลาไว้</li>
                             <li>นับต่อเนื่องจนกว่าจะครบ 10 ครั้ง แล้วจดเวลาที่นับจบ</li>
                             <li>ลูกควรดิ้นครบ 10 ครั้ง <strong className="text-primary">ภายในเวลา 2 ชั่วโมง</strong></li>
                           </>
@@ -330,13 +330,18 @@ export default function App() {
         </div>
 
         {/* CTA Button Sticky Bottom */}
-        <div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background to-transparent z-40 flex justify-center pointer-events-none">
-          <div className="w-full max-w-[430px] pointer-events-auto">
-            <button className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2">
-              {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">→</span>
-            </button>
-          </div>
-        </div>
+<div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background to-transparent z-40 flex justify-center pointer-events-none">
+  <div className="w-full max-w-[430px] pointer-events-auto">
+    
+      href="https://toobtubb.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2"
+    >
+      {isTh ? "เริ่มนับลูกดิ้นเลย" : "Start Counting Kicks"} <span className="text-xl">→</span>
+    </a>
+  </div>
+</div>
 
       </div>
     </div>
